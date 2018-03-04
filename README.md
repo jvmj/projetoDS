@@ -1,9 +1,8 @@
 # projetoDS
-Java/Back challenge
-
+<div style="text-align: justify"> 
 Algumas observações importantes sobre o projeto:</br>
 
-1 - O main da aplicação está no pacote main, classe Application</br>
+1 - O main da aplicação está no pacote main, classe Application.</br>
 2 - A classe ApplicationController (pacote main) especifica os formatos das chamadas à API REST e realiza as requisições solicitadas no exercício. </br>
 3 - O modelo de dados proposto para a solução está disponível em: https://github.com/jvmj/projetoDS/blob/master/modeloER.png. A persistência foi implementada utilizando o MS-SQL. </br>
 4 - O projeto ao ser iniciado gera as tabelas do referido modelo de dados, bem como os respectivos dados necessários para realizar testes.  Este script é chamado na classe principal do projeto -> Application (pacote main). Caso necessitem, também disponibilizei o arquivo .sql, em https://github.com/jvmj/projetoDS/blob/master/script.sql </br>
@@ -11,7 +10,7 @@ Algumas observações importantes sobre o projeto:</br>
 
 </br>
 </br>
-</br>
-</br>
 
 Por fim, é importante esclarecer que este projeto ainda tem cara de prova de conceito, no qual procurei elaborar uma arquitetura que fosse mais facilmente mantida e compreendida. Como pode ser percebido, alguns tipos de dados precisam ser ajustados, tais como a data do envio (classe Envio) e o array de bytes (classe Arquivo). Seria necessário  ajustar estes tipos no modelo das classes e no modelo de dados e testar o comportamento, principalmente em nível de banco de dados. Outros aspectos como segurança e performance neste momento não foram considerados.
+
+</div>
