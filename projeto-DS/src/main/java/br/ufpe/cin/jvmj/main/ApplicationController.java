@@ -1,6 +1,5 @@
 package br.ufpe.cin.jvmj.main;
 
-import java.io.IOException;
 import java.util.Vector;
 import javax.servlet.http.HttpServletResponse;
 
@@ -53,7 +52,7 @@ public class ApplicationController {
 	 * Nesse caso, o browser retorna um arquivo para baixar.
 	 */
 	@RequestMapping (value="/enviar", method = RequestMethod.GET)
-	public void enviar(HttpServletResponse response, @RequestParam(value="data") String dataEnvio, @RequestParam(value="idOperador") int idOperador, @RequestParam(value="idArquivo") int idArquivo, @RequestParam(value="idArquivoTipo") int idArquivoTipo ,@RequestParam(value="idTipoAplicacaoCaptura") int idTipoAplicacaoCaptura) throws IOException{
+	public void enviar(HttpServletResponse response, @RequestParam(value="data") String dataEnvio, @RequestParam(value="idOperador") int idOperador, @RequestParam(value="idArquivo") int idArquivo, @RequestParam(value="idArquivoTipo") int idArquivoTipo ,@RequestParam(value="idTipoAplicacaoCaptura") int idTipoAplicacaoCaptura){
 		Envio envio = new Envio(dataEnvio, idOperador, idArquivo, idArquivoTipo, idTipoAplicacaoCaptura);
 		/*Como os ids sao no formato inteiro e autoincrement, este metodo retorna o id maximo para salvar um novo objeto 
 		 * com o id maior q o maximo encontrado
