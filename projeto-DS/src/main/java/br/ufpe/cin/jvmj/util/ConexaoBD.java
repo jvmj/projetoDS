@@ -13,7 +13,7 @@ public class ConexaoBD {
 		
 
 		String url = "jdbc:sqlserver://localhost:1433;" +  
-		         "databaseName=Teste;user=SA;password=Pirulito123*";
+		         "databaseName=Teste;user=SA;password=password";
 		Connection conexao = null;
 		
 		try {
