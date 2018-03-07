@@ -26,7 +26,6 @@ public class ConexaoBD {
 		}
 		
 		return conexao;
-
 	}
 	
 	public static void closeConnection(Connection c, PreparedStatement pstm, ResultSet rs) {
